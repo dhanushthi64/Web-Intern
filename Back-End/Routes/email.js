@@ -51,12 +51,17 @@ const transporter = nodemailer.createTransport({
   
 
 router.post("/",async(req,res)=>{
-    try{
-        const token = req.query.token
-    const decodeToken = jwt.verify(token,secretkey)
-    const userId = decodeToken.userId
-    const user = await User.findById(userId)
-    mailOptions.to= [user.email]
+    const {name,email} = req.body
+   
+    const newUser = new User({
+        name: name,
+        email: email
+      });
+      
+      newUser.save()
+        .then((user) => {
+          console.log('User created successfully:', user);
+          mailOptions.to= [user.email]
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Error sending email:', error);
@@ -66,10 +71,24 @@ router.post("/",async(req,res)=>{
             res.json({ message: 'Email sent successfully' });
         }
     });
-    }
-    catch(error){
-        res.json(error)
-    }
+          
+        })
+        .catch((err) => {
+          console.error('Error creating user:', err);
+        });
+    
 })
 
 module.exports = router
+
+// try{
+//     const token = req.query.token
+//     console.log(token)
+//     const decodeToken = jwt.verify(token,secretkey)
+//     const userId = decodeToken.userId
+//     const user = await User.findById(userId)
+    
+//     }
+//     catch(error){
+//         res.json(error)
+//     }

@@ -382,9 +382,6 @@ function typeWriter() {
         const formSubmit = ()=>{
           const name = document.getElementById("name").value
           const email = document.getElementById("email").value
-          const date = document.getElementById("dateOfBirth").value
-          const gender = document.querySelector(".gender-value").value
-          const fathersname = document.getElementById("fathername").value
           // const fathersoccupation = document.getElementById("fathersoccupation").value
           // const fathersno = document.getElementById("fatherno").value
           try{
@@ -397,10 +394,7 @@ function typeWriter() {
       {
         name: name,
         email: email,
-        date: date,
-        gender: gender,
-        fathersname:fathersname,
-      }
+        }
     )
           })
           if(response.ok){
