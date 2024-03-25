@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kiddos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+		.ntext{
+			color: black;
+		}
+		.ntext:hover{
+			color: white;
+			border-radius: 3px;
+			border: 1px;
+			background: linear-gradient(#7ce8ff, #55d0ff);
+		}
+		.dropdown-toggle::after{
+			content: none;
+		}
+		.dropdown-menu{
+			padding: 0%;	
+		}
+		.dropdown-item:hover{
+			color: white;
+			background: linear-gradient(#7ce8ff, #55d0ff);
+		}
+        .dark-text{
+            color: black;
+            animation: move-up 0.5s ease-in-out forwards;
+        }
+        @keyframes effect {
+            0% {
+                background: linear-gradient(0deg, rgba(15,53,218,1) 0%, rgba(45,53,253,1) 100%);
+                -webkit-background-clip: text;
+            }
+            50%{
+                background: linear-gradient(0deg, rgb(46, 101, 204) 0%, rgb(12, 148, 161) 100%);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(0deg, rgb(6, 211, 184) 0%, rgb(31, 210, 207) 100%);
+                -webkit-background-clip: text;
+            }
+        }
+        .ftco-footer{
+            animation: move-up 0.5s ease-in-out forwards;
+        }
+        .admission-heading{
+            font-size: 4em;
+            font-family: serif;
+            color: transparent;
+            text-align: center;
+            animation: colorReveal 1s ease-in-out forwards, move-up 0.5s ease-in-out forwards;
+            z-index: 1000;
+        }
+        @keyframes colorReveal {
+  0% { color: hsl(0, 100%, 50%); } /* Example starting color (adjust as needed) */
+  20% { color: hsl(60, 100%, 50%); }
+  40% { color: hsl(120, 100%, 50%); }
+  60% { color: hsl(180, 100%, 50%); }
+  80% { color: hsl(240, 100%, 50%); }
+  100% { color: hsl(243, 100%, 50%); } /* Example ending color (adjust as needed) */
+}
+        @keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.btn {
+  /* Button styles */
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.btn:hover {
+  /* Change background color or other styles on hover */
+  animation-play-state: paused;  /* Pause the pulse animation on hover */
+}
+
+        /* .background-image {
+  background-image: url("./images/bg_1.jpg");  
+  background-repeat: no-repeat;  
+  background-position: center;  
+  background-size: cover;  
+} */
+
+        @media (max-width: 768px) {
+  .admission-heading {
+    font-size: 3em;  /* Adjust font size for smaller screens */
+  }
+}
+
+/* Target screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+  .admission-heading {
+    font-size: 2em;  /* Adjust font size for even smaller screens */
+  }
+}
+
+/* @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} */
+
+
+@keyframes move-up {
+  from { transform: translateY(50px); } 
+  to { transform: translateY(0px); } 
+}
+
+
+/* .owl-carousel.home-slider .slider-item .slider-text p {
+  animation: fadeIn 1s ease-in-out forwards, move-up 0.5s ease-in-out forwards;
+  color: white;
+} */
+
+	</style>
+</head>
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg  bg-light" style="padding: 15px;">
+      <div class="container d-flex align-items-center">
+          <a class="navbar-brand nav-link" style="font-size: 1.7rem;" href="index.html">Kiddos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="index.html" class="nav-link mx-2 ntext">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link mx-2 ntext">About</a></li>
+              <li class="nav-item"><a href="teacher.html" class="nav-link mx-2 ntext">Teacher</a></li>
+              <li class="nav-item dropdown navbar-dark">
+            <a class="nav-link  dropdown-toggle mx-2 ntext"  href="courses.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Classes
+              </a>
+              <div class="dropdown-menu" style="top: 70%;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Primary</a>
+              <a class="dropdown-item" href="#">Secodary</a>
+              <a class="dropdown-item" href="#">Higher Secondary</a>
+              </div>
+          </li>
+               <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+              <li class="nav-item mx-2"><a href="contact.html" class="nav-link ntext">Contact</a></li>
+          <li class="nav-item mx-2"><a href="admission.html" class="nav-link">Admission</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar-end -->
+<!-- section admission -->
+        <div class="container">
+            <h1 class="primary admission-heading">ADMISSIONS</h1>
+            <div class="row justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <p class="dark-text">
+                        Every year, admissions at Sunbeam are open to all classes: LKG to 9th Grade and 11th Grade. All vacant seats are filled on a first-come-first-serve basis. Admissions to 10th and 12th Grades are accepted in special situations, for example, a change of location of the family owing to the job transfer of parents. The Admissions office can be contacted for the same.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <p class="dark-text">
+                        Every year, admissions at Sunbeam are open to all classes: LKG to 9th Grade and 11th Grade. All vacant seats are filled on a first-come-first-serve basis. Admissions to 10th and 12th Grades are accepted in special situations, for example, a change of location of the family owing to the job transfer of parents. The Admissions office can be contacted for the same.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col d-flex justify-content-center">
+                    <p><a href="admissionForm.html" class="btn btn-outline-primary btn-lg mt-3 mb-5">Click here to Apply</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+      <!-- <h1 class="primary admission-heading">Admissions</h1>
+
+      <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image:url(images/bg_5.jpg);">
+            <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-8 text-center ftco-animate">
+              <h1 class="mb-4">Admissions are open</h1>
+              <p class="animated light-text">Some content</p>
+              <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Click to Apply</a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+  
+        <div class="slider-item" style="background-image:url(images/bg_3.jpg);">
+            <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-8 text-center ftco-animate">
+              <h1 class="mb-4">Perfect Learned</h1>
+              <p class="animated light-text">For your child</p>
+              <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Enquire Now</a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+   -->
+<!-- <div class="carousel-item">
+    <img src="./images/bg_2.jpg" class="d-block w-100" alt="Admissions Information 2">
+    <div class="text-overlay slider-text">
+      <h2>Thriving Middle School</h2>
+      <p>Encouraging exploration and preparing students for academic success.</p>
+    </div>
+  </div>
+  </div> -->
+      <!-- <div class="text-overlay slider-text">
+        <h2>Admissions Open Now!</h2>
+        <p>Enroll your child in a nurturing and stimulating learning environment.</p>
+      </div> -->
+      
+<!-- sectin admission -->
+<!-- footer section -->
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-5 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+              <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+              <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
+              <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
+              <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">BrainMint</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<!-- footer section -->
+
+
+    <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</body>
+</html>
